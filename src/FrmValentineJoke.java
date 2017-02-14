@@ -11,7 +11,7 @@
 public class FrmValentineJoke extends javax.swing.JFrame {
 
     /**
-     * Creates new form 
+     * Creates new form FrmValentineJoke
      */
     public FrmValentineJoke() {
         initComponents();
