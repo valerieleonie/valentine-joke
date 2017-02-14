@@ -8,20 +8,20 @@
  *
  * @author ASUS
  */
-public class suprise extends javax.swing.JFrame {
+public class FrmValentineJoke extends javax.swing.JFrame {
 
     /**
-     * Creates new form suprise
+     * Creates new form 
      */
-    public suprise() {
+    public FrmValentineJoke() {
         initComponents();
         this.setLocationRelativeTo(null);
-        setDefaultCloseOperation(suprise.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(FrmValentineJoke.DO_NOTHING_ON_CLOSE);
         this.addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
                 for (int x = 1; x < 11; x++) {
-                    suprise frame = new suprise();
+                    FrmValentineJoke frame = new FrmValentineJoke();
                     frame.setVisible(true);
                     frame.setLocation(Util.randInt(1, 500), Util.randInt(1, 500));
                 }
@@ -123,7 +123,7 @@ public class suprise extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         for (int x = 1; x < 11; x++) {
-            suprise frame = new suprise();
+            FrmValentineJoke frame = new FrmValentineJoke();
             frame.setVisible(true);
             frame.setLocation(Util.randInt(1, 1000), Util.randInt(1, 1200));
         }
@@ -152,21 +152,22 @@ public class suprise extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(suprise.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmValentineJoke.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(suprise.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmValentineJoke.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(suprise.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmValentineJoke.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(suprise.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmValentineJoke.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
 
-                new suprise().setVisible(true);
+                new FrmValentineJoke().setVisible(true);
             }
         });
     }
